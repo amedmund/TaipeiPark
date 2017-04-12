@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "02ac8344-f11b-40b1-bbf2-e1140520eb8b",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "02ac8344-f11b-40b1-bbf2-e1140520eb8b" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "02ac8344-f11b-40b1-bbf2-e1140520eb8b" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "596F3718-EFB0-4F0F-BAE0-484D7DCD0811",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "02ac8344-f11b-40b1-bbf2-e1140520eb8b" : "Src\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TaipeiPark",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Sample Code\/TaipeiPark\/TaipeiPark\/TaipeiPark.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/172.16.6.67\/MacUtil",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "02ac8344-f11b-40b1-bbf2-e1140520eb8b"
+    }
+  ]
+}
