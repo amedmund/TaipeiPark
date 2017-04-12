@@ -1,10 +1,8 @@
-//
-//  AppDelegate.m
-//  TaipeiPark
-//
-//  Created by asustor on 12/04/2017.
-//  Copyright © 2017 amedmund. All rights reserved.
-//
+/**
+ * \file 	AppDelegate.m
+ * \brief	The app delegate
+ *  - 2017/04/12			edmundchen	File created.
+ */
 
 #import "AppDelegate.h"
 

@@ -1,10 +1,8 @@
-//
-//  AppDelegate.h
-//  TaipeiPark
-//
-//  Created by asustor on 12/04/2017.
-//  Copyright © 2017 amedmund. All rights reserved.
-//
+/**
+ * \file 	AppDelegate.h
+ * \brief	The app delegate
+ *  - 2017/04/12			edmundchen	File created.
+ */
 
 #import <UIKit/UIKit.h>
 
