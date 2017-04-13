@@ -6,6 +6,7 @@
 
 #import "MainViewController.h"
 #import "AFNetworking.h"
+#import "ParkInfoViewController.h"
 
 @interface MainViewController ()
 
@@ -27,6 +28,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"ToParkInfoView"])
+    {
+        ParkInfoViewController *vc = (ParkInfoViewController*)[segue destinationViewController];
+        
+        SectionEntry *entry = [self.aryItems objectAtIndex:self.indexPathSel.section];
+        
+        vc.indexAttraction = self.indexPathSel.row;
+        vc.aryAttractions = entry.items;
+    }
 }
 
 #pragma mark - BaseViewDataSource Functions

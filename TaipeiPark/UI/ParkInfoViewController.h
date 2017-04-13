@@ -8,4 +8,7 @@
 
 @interface ParkInfoViewController : ECBaseTableViewController
 
+@property (nonatomic, strong) NSArray *aryAttractions;
+@property (nonatomic, assign) NSUInteger indexAttraction;
+
 @end
