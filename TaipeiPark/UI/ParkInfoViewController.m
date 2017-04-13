@@ -1,10 +1,8 @@
-//
-//  ParkInfoViewController.m
-//  TaipeiPark
-//
-//  Created by asustor on 12/04/2017.
-//  Copyright © 2017 amedmund. All rights reserved.
-//
+/**
+ * \file 	ParkInfoViewController.m
+ * \brief	Show park info.
+ *  - 2017/04/12			edmundchen	File created.
+ */
 
 #import "ParkInfoViewController.h"
 

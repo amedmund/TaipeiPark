@@ -19,3 +19,4 @@
 #import "ECProgressHUDHelper.h"
 #import "Foundation+Extend.h"
 #import "Utility.h"
+#import "UIImageView+AFNetworking.h"

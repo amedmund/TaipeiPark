@@ -1,13 +1,11 @@
-//
-//  ParkInfoViewController.h
-//  TaipeiPark
-//
-//  Created by asustor on 12/04/2017.
-//  Copyright © 2017 amedmund. All rights reserved.
-//
+/**
+ * \file 	ParkInfoViewController.h
+ * \brief	Show park info.
+ *  - 2017/04/12			edmundchen	File created.
+ */
 
-#import "ECBaseViewController.h"
+#import "ECBaseTableViewController.h"
 
-@interface ParkInfoViewController : ECBaseViewController
+@interface ParkInfoViewController : ECBaseTableViewController
 
 @end

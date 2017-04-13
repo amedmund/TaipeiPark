@@ -5,8 +5,9 @@
  */
 
 #import <UIKit/UIKit.h>
+#import "ECBaseTableViewController.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : ECBaseTableViewController
 
 
 @end
