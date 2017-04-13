@@ -55,6 +55,10 @@
     [super init_Navigation_Bar];
     
     self.title = @"台北市公園景點";
+    
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    self.navigationController.navigationBar.barTintColor = CLR_MAJOR;
+    self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:240.0/255.0 green:240.0/255.0 blue:240.0/255.0 alpha:1.0];
 }
 
 - (BOOL)should_Show_Back_Button
@@ -144,9 +148,7 @@
     cell.labelTitle.text = [dic objectForKey:@"Name"];
     cell.labelSubtitle.text = [dic objectForKey:@"ParkName"];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(){
-        [cell.imgViewIcon setImageWithURL:[NSURL URLWithString:[dic objectForKey:@"Image" default:@""]] placeholderImage:[UIImage imageNamed:@"icon_default"]];
-    });
+    [cell.imgViewIcon setImageWithURL:[NSURL URLWithString:[dic objectForKey:@"Image" default:@""]] placeholderImage:[UIImage imageNamed:@"icon_default"]];
     
     cell.labelDetail1.text = [dic objectForKey:@"Introduction"];
     cell.labelDetail1.numberOfLines = 0;

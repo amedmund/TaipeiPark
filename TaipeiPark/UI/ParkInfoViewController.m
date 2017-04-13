@@ -91,7 +91,18 @@
     [_aryItems addObject:@{@"type": @(kECCellStyleInfo), @"title": @"景點名稱", @"value": [dic objectForKey:@"Name"]}];
     [_aryItems addObject:@{@"type": @(kECCellStyleInfo), @"title": @"開放時間", @"value": [dic objectForKey:@"OpenTime"]}];
     [_aryItems addObject:@{@"type": @(kECCellStyleDefault), @"title": [dic objectForKey:@"Introduction"]}];
-    [_aryItems addObject:@{@"type": @(kECCellStyleCustom), @"identifier": @"CellOtherAttr", @"title": @"相關景點"}];
+    
+    if (1 < self.aryAttractions.count)
+    {
+        [_aryItems addObject:@{@"type": @(kECCellStyleCustom), @"identifier": @"CellOtherAttr", @"title": @"相關景點"}];
+    }
+}
+
+- (void)update_Items_On_Main_Thread
+{
+    [super update_Items_On_Main_Thread];
+    
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
 #pragma mark - DataSource of the UITableView
@@ -123,9 +134,7 @@
         
         if ([[dic objectForKey:@"identifier"] isEqualToString:@"CellImage"])
         {
-            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(){
-                [cell.imgViewIcon setImageWithURL:[NSURL URLWithString:[dic objectForKey:@"image" default:@""]] placeholderImage:[UIImage imageNamed:@"icon_default"]];
-            });
+            [cell.imgViewIcon setImageWithURL:[NSURL URLWithString:[dic objectForKey:@"image" default:@""]] placeholderImage:[UIImage imageNamed:@"icon_default"]];
         }
         else
         {
@@ -210,9 +219,7 @@
     NSUInteger index = (self.indexAttraction <= indexPath.item) ? indexPath.item + 1 : indexPath.item;
     NSDictionary *dic = [self.aryAttractions objectAtIndex:index];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(){
-        [cell.imgPhoto setImageWithURL:[NSURL URLWithString:[dic objectForKey:@"Image" default:@""]] placeholderImage:[UIImage imageNamed:@"icon_default"]];
-    });
+    [cell.imgPhoto setImageWithURL:[NSURL URLWithString:[dic objectForKey:@"Image" default:@""]] placeholderImage:[UIImage imageNamed:@"icon_default"]];
     
     cell.imgPhoto.clipsToBounds = YES;
     cell.labelTitle.text = [dic objectForKey:@"Name"];

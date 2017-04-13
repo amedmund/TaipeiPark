@@ -441,7 +441,7 @@
 				TargetAttributes = {
 					720014071E9E17B200A75024 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = T6K7GP63SU;
+						DevelopmentTeam = 8VUXD5P796;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -650,7 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = T6K7GP63SU;
+				DEVELOPMENT_TEAM = 8VUXD5P796;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TaipeiPark/Library/AFNetworking",
@@ -670,7 +670,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = T6K7GP63SU;
+				DEVELOPMENT_TEAM = 8VUXD5P796;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TaipeiPark/Library/AFNetworking",
